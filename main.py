@@ -18,7 +18,7 @@ def search_place(query):
 
     return places["results"]
 
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.get("/itinerary")
 async def generate_itinerary(city: str, days_staying: int):
