@@ -1,7 +1,7 @@
 import googlemaps
 import pprint
-
-API_KEY = 'AIzaSyDlp2yGurVp3IJV_st_XlBkQxur47ScIpM'
+import os
+API_KEY = os.getenv("GOOGLE_MAPS")
 
 gmaps = googlemaps.Client(key=API_KEY)
 
